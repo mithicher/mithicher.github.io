@@ -15,12 +15,6 @@
     </head>
     <body>
 
-        
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
-		  
 		<header class="header">
             <div class="row">
                 <div class="columns six">
@@ -41,24 +35,32 @@
                 <hr>
             </div>
         </header>
+		
+		<div class="main">
+			<div class="row">
+				<div class="columns eight offset-by-two">
+				
+					{{ content }}
+					
+				</div>
+			</div>
+		</div>
 
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
+        <footer class="footer">
+            <div class="row">
+                <div class="columns six">
+                    <ul class="social inline-list">
+                        <li>Follow Me</li>
+                        <li><a class="tw" href="#">Twitter</a></li>
+                        <li><a class="ln" href="#">Linkedin</a></li>
+                        <li><a class="gh" href="#">Github</a></li>
+                    </ul>
+                </div>
+                <div class="columns six">
+                    <p>Powered by <a href="#">Github</a> with <a href="#">Jekyll</a>.</p>
+                </div>
             </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
-          </div>
+        </footer>
          
 
     </body>
