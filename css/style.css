@@ -1,4 +1,6 @@
 @charset "IBM437";
+@import url(http://fonts.googleapis.com/css?family=Nunito);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
 @font-face { font-family: 'open_sans_light'; src: url("../google-fonts/OpenSans-Light-webfont.eot"); src: url("../google-fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../google-fonts/OpenSans-Light-webfont.woff") format("woff"), url("../google-fonts/OpenSans-Light-webfont.ttf") format("truetype"), url("../google-fonts/OpenSans-Light-webfont.svg#open_sanslight") format("svg"); font-weight: normal; font-style: normal; }
 
 @font-face { font-family: 'open_sans_regular'; src: url("../google-fonts/OpenSans-Regular-webfont.eot"); src: url("../google-fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../google-fonts/OpenSans-Regular-webfont.woff") format("woff"), url("../google-fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("../google-fonts/OpenSans-Regular-webfont.svg#open_sansregular") format("svg"); font-weight: normal; font-style: normal; }
@@ -245,7 +247,7 @@ body, input, button { -webkit-font-smoothing: antialiased; }
 /*
 base
 */
-html { font: 100%/1.5 "open_sans_regular", Helvetica, Arial, sans-serif, Arial, sans-serif; }
+html { font: 100%/1.5 "Raleway", Helvetica, Arial, sans-serif, Arial, sans-serif; }
 
 /*
 headings
@@ -263,7 +265,7 @@ h5 { font-size: 0.83em; /* 0.83*16 = 13.28 */ }
 
 h6 { font-size: 0.75em; /* 0.75*16 = 12 */ }
 
-h1, h2, h3, h4, h5, h6 { font-family: "open_sans_semibold", serif; font-weight: 700; margin-top: 0; margin-bottom: 0.625em; letter-spacing: 1px; color: #333333; }
+h1, h2, h3, h4, h5, h6 { font-family: "Nunito", serif; font-weight: 700; margin-top: 0; margin-bottom: 0.625em; letter-spacing: 1px; color: #333333; }
 
 /* 
 paragraphs 
@@ -272,7 +274,7 @@ p { line-height: 1.5; margin: 0 0 1em; }
 
 .indent p + p { text-indent: 2em; margin-top: 1em; }
 
-p.lead { font-size: 1.4em; font-family: "open_sans_light", Helvetica, Arial, sans-serif; }
+p.lead { font-size: 1.4em; font-family: "Raleway", Helvetica, Arial, sans-serif; }
 
 /*
 cross-browser hyphenation
@@ -308,7 +310,7 @@ code, pre { font-family: monospace, serif; font-size: 1em; }
 /*
 blockquotes
 */
-blockquote { font-family: "open_sans_light", Helvetica, Arial, sans-serif; font-weight: 300; font-size: 1.425em; margin-top: 1em; margin-bottom: 1em; color: #2ecc71; }
+blockquote { font-family: "Raleway", Helvetica, Arial, sans-serif; font-weight: 300; font-size: 1.425em; margin-top: 1em; margin-bottom: 1em; color: #2ecc71; }
 
 blockquote:before { content: "\201C"; display: inline-block; padding-right: .4em; }
 
@@ -402,7 +404,7 @@ img { max-width: 100%; height: auto; }
 /* global padding */
 .module, .header, .footer { padding-top: 2em; padding-bottom: 2em; }
 
-.module3, .skills, .blog, .works { padding-top: 3em; padding-bottom: 3em; }
+.module3, .main, .works { padding-top: 3em; padding-bottom: 3em; }
 
 /* text color */
 .text-green { color: #2ecc71; }
@@ -415,7 +417,7 @@ body { background: #fff; }
 .logo-wrap { text-align: center; }
 
 @media only screen and (min-width: 40em) { .logo-wrap { text-align: left; } }
-.logo-link { font-size: 2.2em; font-family: "open_sans_semibold", serif; color: #2ecc71; margin: 0; line-height: 1.2; letter-spacing: -.05em; opacity: 1; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; }
+.logo-link { font-size: 2.2em; font-family: "Nunito", serif; color: #2ecc71; margin: 0; line-height: 1.2; letter-spacing: -.05em; opacity: 1; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; }
 .logo-link:hover { opacity: .75; }
 
 .nav { text-align: center; }
@@ -423,31 +425,26 @@ body { background: #fff; }
 .menu { display: inline-block; position: relative; margin: 0; padding: 0; }
 .menu li { display: inline-block; position: relative; margin: 0 1em 0 0; padding: 0; }
 .menu li:last-of-type { margin-right: 0; }
-.menu li a { padding: 0.6em; display: inline-block; text-transform: uppercase; font-family: inherit; font-weight: 400; font-size: 0.9em; letter-spacing: 1px; color: #444444; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; }
+.menu li a { padding: 0.6em; display: inline-block; text-transform: uppercase; font-family: inherit; font-weight: 400; font-size: 0.9em; color: #444444; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; }
 .menu li a:hover { color: #2ecc71; }
 
 /* Hero style */
 .hero { padding-top: 5%; padding-bottom: 5%; background: #2ecc71; }
 .hero h1, .hero h2 { margin-bottom: 0; text-align: center; color: white; line-height: 1.4; }
 .hero h1 { font-size: 3.2em; text-shadow: 3px 2px 0 #25a25a; }
-.hero h2 { font-family: "open_sans_light", Helvetica, Arial, sans-serif; font-weight: 300; }
+.hero h2 { font-family: "Raleway", Helvetica, Arial, sans-serif; font-weight: 300; }
 
 /* Skills style */
-.skills { background: #f8f8f8; }
-.skills img { margin-bottom: 1em; box-shadow: 0 0 0 4px #eee; border-radius: 50%; }
-.skills p { text-align: left; }
-.skills p a { color: #2ecc71; }
-.skills p a:hover { border-bottom: 1px solid #ddd; }
-.skills li { margin-bottom: 0.4em; padding-left: 0.4em; }
-
 /* Blog style */
-.blog { background: #f8f8f8; }
-.blog h1 { color: #2ecc71; font-family: "open_sans_light", Helvetica, Arial, sans-serif; font-weight: 300; }
-.blog h2 a { color: #333333; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; }
-.blog h2 a:hover { color: #2ecc71; }
-.blog p { line-height: 1.8; }
-.blog article { display: block; position: relative; margin-bottom: 2em; }
+.main { background: #f8f8f8; min-height: 100%; }
+.main h1 { color: #2ecc71; font-family: "Raleway", Helvetica, Arial, sans-serif; font-weight: 300; }
+.main h2 a { color: #333333; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; }
+.main h2 a:hover { color: #2ecc71; }
+.main p { line-height: 1.8; }
+.main article { display: block; position: relative; margin-bottom: 2em; }
 
+@media screen and (min-width: 40em) { .main article h2 { font-size: 2.2em; }
+  .main p { font-size: 1.125em; } }
 /* Works style */
 .works { text-align: center; background: #f8f8f8; }
 .works h1 { color: #2ecc71; }
