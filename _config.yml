@@ -1,3 +1,13 @@
 name: mithicher
+
+# Dependencies
 markdown: redcarpet
 pygments: false
+
+# Permalinks
+#permalink: pretty
+
+paginate: 5
+
+# Custom vars
+version: 1.0.0

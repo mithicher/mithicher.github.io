@@ -1,13 +1,33 @@
 ---
 layout: default
 title: Home
+priority: 1.0
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <article class="posts">
-    {% for post in site.posts %}
-      <span>{{ post.date | date_to_string }}</span> &raquo; <h2><a href="{{ post.url }}">{{ post.title }}</a></h2> 
-    {% endfor %}
-  </article>
+<div class="main">
+	<div class="row">
+		<div class="columns ten offset-by-one" id="home">
+			<h1>Blog Posts&hellip;</h1>
+		 
+			{% for post in site.posts %} 
+				<article class="posts">
+					<h2><a href="{{ post.url }}">{{ post.title }}</a></h2> 
+					
+					<!-- AddThis Button BEGIN -->
+						<div class="addthis_toolbox addthis_default_style ">
+						<a class="addthis_button_tweet"></a>
+						</div>
+						<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+						<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5368ba6c1e1c136a"></script>
+					<!-- AddThis Button END -->
+					
+					<p class="meta">{{ post.date | date_to_string }} </p>
+					
+					<p>{{ post.meta }}</p>
+					<p><a class="btn btn-small btn-green" href="{{ post.url }}">Read more &rarr;</a></p>
+				</article>
+			{% endfor %}
+		  
+		</div>
+	</div>
 </div>
