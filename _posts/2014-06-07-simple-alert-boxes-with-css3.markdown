@@ -13,9 +13,11 @@ Frameworks like <a class="style1" href="http://getbootstrap.com">Bootstrap</a>, 
 Let's start with the markup
 
 {% highlight html %}
+
 <div class="alert alert-error">
 	Some dummy text here...
 </div>
+
 {% endhighlight %}
 
 Now the CSS part
