@@ -1,0 +1,64 @@
+/*----------------------------------------------------- 
+	Hero
+-----------------------------------------------------*/
+
+.hero {
+	position: relative;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	text-align: center;
+	background-color: $green;
+
+	// &:after {
+	// 	display: block;
+	// 	position: absolute;
+	// 	content: "";
+	// 	top: 92%;
+	// 	left: 0;
+	// 	right: 0;
+	// 	bottom: 0;
+	// 	width: 100%;
+	//     height: 50px;
+	//     margin:  0 auto;
+	//     background-color: #f5f7fa;
+	//     -webkit-transform: skew(-2deg) rotate(-2deg);
+ //    	   -moz-transform: skew(-2deg) rotate(-2deg);
+ //             -o-transform: skew(-2deg) rotate(-2deg);
+ //                transform: skew(-2deg) rotate(-2deg);	
+	    
+	// }
+
+	h1, p {
+		margin: 0;
+	}
+
+	h1 {
+		font-size: 2.2em;
+		line-height: 1.2;
+		margin-bottom: 0.325em;
+		color: $white;
+		@include text-shadow(3px 2px 0 darken($green, 10%));
+		span {
+			color: #5d9cec;
+			font-family: "Lato-Light";
+			font-weight: 200;
+			letter-spacing: -3px;
+		}
+	}
+	p {
+		color: $white;
+		letter-spacing: 1px;
+	}
+}
+
+@include MQ(S) {
+	.hero {
+		padding-top: 6.25em;
+		padding-bottom: 6.25em;
+		h1 {
+			font-size: 3.2em;
+		}
+	}
+}
+ 
+ 

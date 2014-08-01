@@ -20,16 +20,16 @@
     </head>
     <body>
 
-		<header class="header">
+		<header class="site-header bg-green">
             <div class="row">
-                <div class="columns six">
-                    <div class="logo-wrap">
+                <div class="columns large-12">
+                    <div class="logo">
                         <a class="logo-link" href="/">{{ site.name }}</a>
+                        <a href="#" id="toggle-menu" class="toggle-menu" title="Menu">Menu</a>
                     </div>
-                </div>
-                <div class="columns six">
+                
                     <nav class="nav">
-                        <ul class="menu">
+                        <ul>
                             <li class="menu-item"><a class="{% if page.url == '/index.html' %}current{% endif %}" href="/">Blog</a></li>
                             <li class="menu-item"><a class="{% if page.url == '/about-me.html' %}current{% endif %}" href="/about-me.html">About me</a></li>
 							<li class="menu-item"><a href="/mithicherbaro.pdf">Resume</a></li>
@@ -37,7 +37,7 @@
                         </ul>
                     </nav>
                 </div>
-                <hr>
+                
             </div>
         </header>
 		
@@ -45,9 +45,9 @@
 		{{ content }}
 					
 		 
-        <footer class="footer">
+        <footer class="footer has-padding-tb">
             <div class="row">
-                <div class="columns six">
+                <div class="columns large-12">
                     <ul class="social inline-list">
                         <li>Follow Me</li>
                         <li><a class="tw" title="Follow me on Twitter" href="https://twitter.com/mithicher">Twitter</a></li>
@@ -55,7 +55,7 @@
                         <li><a class="gh" title="Find me on Github" href="https://github.com/mithicher/">Github</a></li>
                     </ul>
                 </div>
-                <div class="columns six">
+                <div class="columns large-12">
                     <p>Powered by <a href="https://github.com/">Github</a> with <a href="http://jekyllrb.com">Jekyll</a>.</p>
                 </div>
             </div>
@@ -63,6 +63,8 @@
         
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script>hljs.initHighlightingOnLoad();</script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/navigation.js"></script>
 		<script type="text/javascript">
 		/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
 		var disqus_shortname = 'mithicher-github'; // required: replace example with your forum shortname

@@ -1,0 +1,57 @@
+/* Folded Corner */
+// .folded {
+//   position: relative;
+//   max-width: 100%;
+//   margin-bottom: 1.5em;
+//   color: $color-text;
+//   background-color: $folded-default;
+//   overflow: hidden;
+// }
+// .folded {
+//   position: relative;
+//   overflow: hidden;
+// }
+// .folded:before {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   border-width: 0 16px 16px 0;
+//   border-style: solid;
+//   border-color: #fff #fff $color2 $color2;
+//   background: $color2;
+//   /* Firefox 3.0 damage limitation */
+//   display: block; width: 0;
+// }
+
+@mixin folded($color1, $color2, $border-width: 16px, $radius: 8px) {
+  position: relative;
+  overflow: hidden;
+
+  -moz-border-radius: $radius 0 $radius $radius;
+       border-radius: $radius 0 $radius $radius;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-width: $border-width;
+    border-style: solid;
+    border-color: $color1 $color1 $color2 $color2;
+    background: $color2;
+    /* Firefox 3.0 damage limitation */
+    display: block; width: 0;
+
+    -moz-border-radius: 0 0 0 $radius;
+         border-radius: 0 0 0 $radius;
+  }
+}
+
+.folded-gray {
+  @include folded($white, $gray-light);
+}
+
+.folded-blue {
+  @include folded($white, $blue-dark);
+}

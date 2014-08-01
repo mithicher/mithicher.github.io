@@ -1,0 +1,12 @@
+/*----------------------------------------------------- 
+  Divider
+-----------------------------------------------------*/
+
+hr {
+	display: block;
+	height: 2px;
+	margin: 0;
+	margin-bottom: 2em;
+	border: none;
+	background-color: $gray-lightest;
+}

@@ -1,0 +1,82 @@
+/*----------------------------------------------------- 
+  Buttons
+-----------------------------------------------------*/
+
+@mixin btn-theme($btn-color, $color) {
+	border-color: darken($btn-color, 8%);
+	background-color: $btn-color;
+	color: $color;
+	&:hover {
+		background-color: darken($btn-color, 8%);
+		color: $color;
+	}
+	&:active {
+		background-color: darken($btn-color, 12%); 
+		color: $color;
+	}
+}
+
+@mixin btn-outline($btn-color, $color) { 
+	@include box-shadow(0 0 0 1px $btn-color inset);
+	color: $btn-color;
+	background: transparent;
+	&:hover {
+		background-color: $btn-color;
+		color: $color;
+	}
+	&:active {
+		background-color: darken($btn-color, 2%); 
+		color: $color;
+	}
+}
+
+%btn {
+	display: inline-block;
+	margin: 0;
+	outline: none; 
+	padding: 8px 32px;
+	border: 0;
+	font-family: $font-heading;
+	font-size: 1rem;
+	font-weight: 700;
+	@include transition($trans); 
+	text: {
+		transform: capitalize;
+		decoration: none;
+		align: center;
+		shadow: none;
+	}
+	color: #fff;
+	letter-spacing: 1px;
+	vertical-align: middle;
+	cursor: pointer;
+
+	&:hover {
+		border: 0;
+		outline: none;
+	}
+}
+
+/* Normal Buttons */
+.btn-default {
+	@extend %btn;
+	@include btn-theme($btn-default, #fff);
+}
+
+/* Ghost Buttons */
+.btn-default-outline {
+	@extend %btn;
+	@include btn-outline($btn-default, #fff);
+}
+
+/* Button Sizes */
+.btn-small 	{ padding: 6px 20px;	}
+.btn-medium { padding: 8px 32px; 	}
+.btn-large 	{ padding: 12px 40px; 	}
+
+/* Button Block */
+.btn-full { width: 100%; }
+
+/* Button Pill */
+.btn-pill {	@include border-radius(20px); }
+

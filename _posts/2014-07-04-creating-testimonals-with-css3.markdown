@@ -9,7 +9,7 @@ priority: 1.0
 
 Here I am making a simple testimonals snippets using HTML5 & CSS3 that can be used in portfolio website projects.
 
-View Demo <a class="btn btn-small btn-green" href="http://codepen.io/mithicher/full/pKaLI/">Demo</a>
+View Demo <a class="btn-default-outline btn-medium" href="http://codepen.io/mithicher/full/pKaLI/">Demo</a>
 
 Let's start with the markup
 

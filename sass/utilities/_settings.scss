@@ -1,0 +1,62 @@
+/*-----------------------------------------------------
+	Settings
+-----------------------------------------------------*/
+
+/* Width */
+$max-width: 62.5em;
+
+/* Break Points */
+$S: 30.063em;
+$M: 48.063em;
+$L: 64.063em;
+
+/* Typography */
+$font-paragraph : "Lato-Light", Helvetica, Arial, sans-serif;
+$font-heading 	: "Lato-Bold", Georgia, serif;
+
+/* Colors */
+$green 		: #2ecc71;
+$blue 		: #5d9cec;
+$blue-dark 	: #4a89dc;
+
+$white 		: #ffffff;
+$black 		: #434a54;
+
+$gray           : #67747c;
+$gray-medium    : #e6e9ed;
+$gray-light     : #bdc3c7;
+$gray-lightest  : #f5f7fa;
+
+/* Selection Color*/
+$color-highlight: $blue;
+
+/* Links */
+$color-link 		: $green;
+$color-link-hover 	: $green;
+
+/* Text color */
+$color-heading 			: $black;
+$color-text 			: $gray;
+$color-text-light 		: $gray-light;
+$color-text-lightest 	: $gray-lightest;
+ 
+/* Well */
+$well-default: $gray-medium;
+
+/* Folded Corner */
+$folded-default: $gray-medium;
+
+/* hr */
+$color-hr: $gray-light;
+
+/* Buttons */
+$btn-default: $green;
+
+/* $global-padding */
+$pad: 2em;
+
+/* Base Radius */
+$radius: 3px;
+
+/* Transition */
+$trans: all 0.35s ease;
