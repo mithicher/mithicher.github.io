@@ -48,6 +48,10 @@
 		color: darken($green, 10%);
 	}
 
+	.nav li a.active {
+		color: darken($green, 10%);
+	}
+
 /* Toggle menu */
 .toggle-menu {
 	width: 40px;

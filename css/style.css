@@ -2294,6 +2294,7 @@ ol li {
   position: relative;
   max-width: 100%;
   overflow: hidden;
+  margin-top: 1em;
   margin-bottom: 1em;
   top: 0;
   -webkit-transition: top 0.35s ease-out;
@@ -2308,6 +2309,7 @@ ol li {
     margin-bottom: 0.325em;
     line-height: 80px;
     text-align: center;
+    font-family: "Lato-Bold", Georgia, serif;
     font-size: 1.2em;
     -webkit-border-radius: 40px;
     -moz-border-radius: 40px;
@@ -2326,6 +2328,7 @@ ol li {
   position: relative;
   max-width: 100%;
   overflow: hidden;
+  margin-top: 1em;
   margin-bottom: 1em;
   top: 0;
   -webkit-transition: top 0.35s ease-out;
@@ -2340,6 +2343,7 @@ ol li {
     margin-bottom: 0.325em;
     line-height: 80px;
     text-align: center;
+    font-family: "Lato-Bold", Georgia, serif;
     font-size: 1.2em;
     -webkit-border-radius: 40px;
     -moz-border-radius: 40px;
@@ -2358,6 +2362,7 @@ ol li {
   position: relative;
   max-width: 100%;
   overflow: hidden;
+  margin-top: 1em;
   margin-bottom: 1em;
   top: 0;
   -webkit-transition: top 0.35s ease-out;
@@ -2372,6 +2377,7 @@ ol li {
     margin-bottom: 0.325em;
     line-height: 80px;
     text-align: center;
+    font-family: "Lato-Bold", Georgia, serif;
     font-size: 1.2em;
     -webkit-border-radius: 40px;
     -moz-border-radius: 40px;
@@ -2390,6 +2396,7 @@ ol li {
   position: relative;
   max-width: 100%;
   overflow: hidden;
+  margin-top: 1em;
   margin-bottom: 1em;
   top: 0;
   -webkit-transition: top 0.35s ease-out;
@@ -2404,6 +2411,7 @@ ol li {
     margin-bottom: 0.325em;
     line-height: 80px;
     text-align: center;
+    font-family: "Lato-Bold", Georgia, serif;
     font-size: 1.2em;
     -webkit-border-radius: 40px;
     -moz-border-radius: 40px;
@@ -2422,6 +2430,7 @@ ol li {
   position: relative;
   max-width: 100%;
   overflow: hidden;
+  margin-top: 1em;
   margin-bottom: 1em;
   top: 0;
   -webkit-transition: top 0.35s ease-out;
@@ -2436,6 +2445,7 @@ ol li {
     margin-bottom: 0.325em;
     line-height: 80px;
     text-align: center;
+    font-family: "Lato-Bold", Georgia, serif;
     font-size: 1.2em;
     -webkit-border-radius: 40px;
     -moz-border-radius: 40px;
@@ -2454,6 +2464,7 @@ ol li {
   position: relative;
   max-width: 100%;
   overflow: hidden;
+  margin-top: 1em;
   margin-bottom: 1em;
   top: 0;
   -webkit-transition: top 0.35s ease-out;
@@ -2468,6 +2479,7 @@ ol li {
     margin-bottom: 0.325em;
     line-height: 80px;
     text-align: center;
+    font-family: "Lato-Bold", Georgia, serif;
     font-size: 1.2em;
     -webkit-border-radius: 40px;
     -moz-border-radius: 40px;
@@ -2526,6 +2538,9 @@ ol li {
 
 .nav li a:hover {
   border: 0;
+  color: #25a25a; }
+
+.nav li a.active {
   color: #25a25a; }
 
 /* Toggle menu */
@@ -2587,7 +2602,7 @@ ol li {
     line-height: 1.2;
     margin-bottom: 0.325em;
     color: white;
-    text-shadow: 3px 2px 0 #25a25a; }
+    text-shadow: 4px 2px 0 #25a25a; }
     .hero h1 span {
       color: #5d9cec;
       font-family: "Lato-Light";
@@ -2599,10 +2614,23 @@ ol li {
 
 @media only screen and (min-width: 30.063em) {
   .hero {
-    padding-top: 6.25em;
-    padding-bottom: 6.25em; }
+    padding: 0; }
+    .hero .hero-content {
+      text-align: center;
+      height: 450px;
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      transform-style: preserve-3d; }
+    .hero .hero-description {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%); }
     .hero h1 {
-      font-size: 3.2em; } }
+      font-size: 4em; } }
 /* Theme */
 /*-----------------------------------------------------
 	Theme
