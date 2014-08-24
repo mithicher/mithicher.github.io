@@ -1,35 +1,92 @@
 ---
 layout: default
 title: Home
-priority: 1.0
 ---
 
-<div class="has-padding-tb">
-	<div class="row">
-		<div class="columns large-8" id="home">
-			 
-			{% for post in site.posts %} 
-				<article class="posts">
-					<h2><a href="{{ post.url }}">{{ post.title }}</a></h2> 
-					
-					<p class="meta"><span>posted on </span>{{ post.date | date_to_string }}</p>
-					
-					<p>{{ post.meta }}</p>
-					 
-				</article>
-			{% endfor %}
-		  
-		</div>
-
-		<div class="columns large-4">
-			<div class="tweets">
-				 
-				<a class="twitter-timeline"  href="https://twitter.com/mithicher" data-widget-id="404591030814531584" data-chrome="nofooter noborders transparent" data-tweet-limit="6">Tweets by @mithicher</a> 	
-				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-				</script>
-
-
+	<div class="hero">
+		<div class="row">
+			<div class="columns large-12">
+				<div id="hero-content" class="hero-content">
+                    <div class="hero-description">
+					   <h1 class="animated fadeInLeftBig">Hi, I'm <span class="rwd-break">Mithicher Baro</span></h1>
+					   <h3 class="animated slideInDown"><span class="rwd-break">A self-learned Front-End</span> <span class="rwd-break">Web Developer from India</span></h3>
+                    </div>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
+
+	<div class="has-padding-tb">
+		<div class="row wow fadeInDown">
+			<div class="columns large-12">
+				<h2 class="head-title text-center">About Me</h2>
+			</div>
+		</div>
+
+		<div class="row wow fadeInLeft">
+			<div class="columns large-8 large-offset-2 medium-8 medium-offset-2">
+			 	<p>Hi, I'm <a href="https://twitter.com/mithicher">Mithicher Baro</a>, a self-learned front-end web developer from Guwahati, India. I am an IT graduate and I love web development.</p>
+				<p>I create website that are clean, functional and responsive too. I like minimalist, typography and flat web design trends.</p>
+				<p>If you would like to connect with me, then find me on 
+					<a href="https://twitter.com/mithicher">Twitter</a> and 
+					<a href="https://github.com/mithicher/">Github</a>.
+				</p>
+				<p>You can also drop me a mail at <a href="mailto:mithnehu@gmail.com">mithnehu@gmail.com</a></p>
+             
+                <p>Some of my web development skills...</p>
+                <ul class="circle">
+                    <li><p>HTML5, CSS3, Responsive Web Design</p></li>
+                    <li><p>Css preprocessors like Sass &amp; Compass</p></li>
+                    <li><p>Javascripts &amp; jQuery</p></li>
+                    <li><p>Css frameworks Bootstrap 3, Foundation 5</p></li>
+                    <li><p>PHP &amp; MySQL</p></li>
+                </ul>
+            </div>    
+		</div>
+	</div>
+
+	<div class="service has-padding-tb-lg bg-white">
+		 
+		<div class="row wow fadeInDown">
+			<div class="columns large-12">
+				<h2 class="head-title text-center">What I Can Do</h2>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="columns large-10 large-offset-1">
+				<div class="multi-columns">
+					 
+						<div class="text-center wow fadeInLeft">
+							<i class="fa fa-desktop fa-2x"></i>
+						 	<h3>Web Design</h3>
+						 	<p>I can develop good looking websites with HTML5 &amp; CSS3
+						 		and make them responsive too.</p>
+						</div>
+		            
+		            	<div class="text-center wow fadeInRight">
+		            		<i class="fa fa-gears fa-2x"></i>
+						 	<h3>Web Development</h3>
+						 	<p>I can develop custom dynamic applications with PHP &amp; MySQL.</p>
+						</div>
+		            
+		        </div>
+	        </div>    
+		</div>
+		 
+	</div>
+
+	<div class="contact has-padding-tb-lg text-center"> 
+		<div class="row wow fadeInDown">
+			 
+	        <div class="columns large-12">
+	             
+	            <h2>Get In Touch</h2> 
+	            <p>Let's talk.</span></p>
+	            <p><a class="btn-default-outline btn-large" href="mailto:mithnehu@gmail.com">Email Me</a>&nbsp;<a class="btn-default btn-large" href="https://twitter.com/mithicher">Tweet me</a></p>
+	              
+	        </div>
+	         
+		</div>
+	</div>
+        

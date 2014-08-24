@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/animate.min.css">
 		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.0/animate.min.css">
+        <link href="//cdn.jsdelivr.net/devicons/1.4.0/css/devicons.min.css" rel="stylesheet">
 		
 		<link rel="stylesheet" href="//yandex.st/highlightjs/8.0/styles/rainbow.min.css">
 		<script src="//yandex.st/highlightjs/8.0/highlight.min.js"></script>
@@ -22,19 +23,19 @@
     </head>
     <body>
 
-		<header class="site-header bg-green">
+		<header class="site-header">
             <div class="row">
                 <div class="columns large-12">
                     <div class="logo">
                         <a class="logo-link" href="/">{{ site.name }}</a>
-                        <a href="#" id="toggle-menu" class="toggle-menu" title="Menu">Menu</a>
                     </div>
                 
                     <nav class="nav">
-                        <ul>
-                            <li><a class="{% if page.url == '/index.html' %}active{% endif %}" href="/">Blog</a></li>
-                            <li><a class="{% if page.url == '/about-me.html' %}active{% endif %}" href="/about-me.html">About me</a></li>
-							<li><a href="/mithicherbaro.pdf">Resume</a></li>
+                        <ul class="menu">
+                            <li class="menu-item"><a class="{% if page.url == '/index.html' %}active{% endif %}" href="/">Home</a></li>
+                            <li class="menu-item"><a class="{% if page.url == '/blog.html' %}active{% endif %}" href="/blog.html">Blog</a></li>
+							<li class="menu-item"><a href="/mithicherbaro.pdf">Resume</a></li>
+                            <li class="menu-item"><a class="twitter" href="https://twitter.com/mithicher">Twitter</a></li>
                             <!--<li class="menu-item"><a class="{% if page.url == 'index.html' %}current{% endif %}" href="/archives.html">Archives</a></li>-->
                         </ul>
                     </nav>
@@ -49,7 +50,7 @@
 		 
         <footer class="footer has-padding-tb">
             <div class="row">
-                <div class="columns large-12">
+                <div class="columns large-8">
                     <ul class="social inline-list">
                         <li>Follow Me</li>
                         <li><a class="tw" title="Follow me on Twitter" href="https://twitter.com/mithicher">Twitter</a></li>
@@ -57,7 +58,7 @@
                         <li><a class="gh" title="Find me on Github" href="https://github.com/mithicher/">Github</a></li>
                     </ul>
                 </div>
-                <div class="columns large-12">
+                <div class="columns large-4">
                     <p>Powered by <a href="https://github.com/">Github</a> with <a href="http://jekyllrb.com">Jekyll</a>.</p>
                 </div>
             </div>

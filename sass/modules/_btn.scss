@@ -1,9 +1,11 @@
-/*----------------------------------------------------- 
-  Buttons
------------------------------------------------------*/
+/**
+ * ----------------------------------------------------------------------------------------
+ * Button styles.
+ * ----------------------------------------------------------------------------------------
+ */
 
+/* Button Mixins */
 @mixin btn-theme($btn-color, $color) {
-	border-color: darken($btn-color, 8%);
 	background-color: $btn-color;
 	color: $color;
 	&:hover {
@@ -17,15 +19,15 @@
 }
 
 @mixin btn-outline($btn-color, $color) { 
-	@include box-shadow(0 0 0 1px $btn-color inset);
+	@include box-shadow(0 0 0 1px darken($btn-color, 8%) inset);
 	color: $btn-color;
 	background: transparent;
 	&:hover {
-		background-color: $btn-color;
+		background-color: darken($btn-color, 8%);
 		color: $color;
 	}
 	&:active {
-		background-color: darken($btn-color, 2%); 
+		background-color: darken($btn-color, 12%); 
 		color: $color;
 	}
 }
@@ -34,26 +36,28 @@
 	display: inline-block;
 	margin: 0;
 	outline: none; 
-	padding: 8px 32px;
+	padding: 8px 30px;
+	//border: 0.0625em solid;
 	border: 0;
-	font-family: $font-heading;
-	font-size: 1rem;
+	font-family: inherit;
+	font-size: 1em;
 	font-weight: 700;
 	@include transition($trans); 
 	text: {
 		transform: capitalize;
 		decoration: none;
 		align: center;
-		shadow: none;
+		//shadow: 0 0.063em rgba(black,.3);
 	}
 	color: #fff;
 	letter-spacing: 1px;
 	vertical-align: middle;
+	line-height: normal;
 	cursor: pointer;
-
+	white-space: nowrap;
+	 
 	&:hover {
 		border: 0;
-		outline: none;
 	}
 }
 
@@ -63,20 +67,22 @@
 	@include btn-theme($btn-default, #fff);
 }
 
+
 /* Ghost Buttons */
 .btn-default-outline {
 	@extend %btn;
 	@include btn-outline($btn-default, #fff);
 }
 
+ 
 /* Button Sizes */
-.btn-small 	{ padding: 6px 20px;	}
-.btn-medium { padding: 8px 32px; 	}
-.btn-large 	{ padding: 12px 40px; 	}
+.btn-small 	{ 	padding: 6px 20px; 	font-size: 0.875em; 	}
+.btn-medium { 	padding: 8px 30px; 	font-size: 1em;			}
+.btn-large 	{	padding: 14px 40px; font-size: 1.125em;		}
 
 /* Button Block */
 .btn-full { width: 100%; }
 
 /* Button Pill */
-.btn-pill {	@include border-radius(20px); }
+.btn-pill { @include border-radius(20px); }
 

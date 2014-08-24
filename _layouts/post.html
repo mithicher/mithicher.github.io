@@ -4,20 +4,18 @@ layout: default
 
 <div class="has-padding-tb">
 	<div class="row">
-		<div class="columns large-10" id="home">
+		<div class="columns large-8 large-offset-2 medium-8 medium-offset-2" id="home">
 			<article class="posts">
 				<h2>{{ page.title }}</h2>
 
 				<p class="meta"><span>posted on </span>{{ page.date | date_to_string }}</p>
 				
-				<!-- AddThis Button BEGIN -->
-					<div class="addthis_toolbox addthis_default_style">
-					<a class="addthis_button_tweet"></a>
-					</div>
-					<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-					<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5368ba6c1e1c136a"></script>
-				<!-- AddThis Button END -->
-				 
+				<!-- Go to www.addthis.com/dashboard to customize your tools -->
+				<div class="addthis_native_toolbox"></div><br>
+				<!-- Go to www.addthis.com/dashboard to customize your tools -->
+				<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5368ba6c1e1c136a"></script>
+
+
 				<div class="post">
 					{{ content }}
 				</div>

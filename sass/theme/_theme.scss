@@ -2,86 +2,63 @@
 	Theme
 -----------------------------------------------------*/
 
-.site-header {
-	height: 80px;
-	position: relative;
-	clear: both;
-	// background-color: $gray-lightest;
-	/*box-shadow: 0 -2px 0 #e6e9ed inset;*/
-
+body {
+	// background-image: url(../img/bg2.png);
+	// background-repeat: repeat repeat;
+	background-color: rgba(222,222,222,0.2);
 }
 
-/* Logo */
+/* 
+	Site Header
+-----------------------------------------------------*/
+.site-header {
+	background-color: $white;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	border-bottom: 1px solid darken($white, 5%);
 
-.logo-link {
-	height: auto;
-	line-height: normal;
-	float: left;
-	margin-top: 0.625em;
-	text-decoration: none;
-	border: 0;
-	font-family: $font-heading;
-	font-size: 1.8em;
-	font-weight: 700;
-	color: $white;
-	letter-spacing: -1px;
+	.logo-link {
+		float: none;
+		display: block;
+		text-align: left;
+		font-size: 2.618em;
+		font-family: $font-heading;
+		font-weight: 700;
+		letter-spacing: -1px;
+		vertical-align: bottom;
+		color: $color-text;
 
-	&:hover {
-		border: 0;
-		color: lighten($white, 10%);
+		&:hover {
+			color: $primary-color;
+		}
+
+		@include MQ(S) {
+			float: left;
+			font-size: 1.618em;
+		}
 	}
 }
 
-/* Head title */
-
-.head-title {
-	margin-bottom: 0;
-	position: relative;
-	text-align: center;
-	letter-spacing: 1px;
-}
-
-// .head-title:after {
-// 	content: "";
-// 	position: absolute;
-// 	display: block;
-// 	width: 100px;
-// 	margin: 0 auto;
-// 	height: 2px;
-// 	top: 100%;
-// 	left: 0;
-// 	right: 0;
-// 	bottom: 0;
-// 	background-color: $gray-light;
-// }
- 
-.sub-heading {
-	margin-top: 0;
-	margin-bottom: 1em;
-	font-family: inherit;
-	font-weight: 200;
-	text-align: center;
-	color: $gray-light;
-	letter-spacing: 1px;
-}
-
-
-/* article styling */
+/* 
+	article styling 
+-----------------------------------------------------*/
 
 .posts {
-	margin-bottom: 8%;
+	margin-bottom: $baseline;
+	border-bottom: 1px dashed $color-hr;
+
 	h2 > a {
 		color: $color-heading;
 
 		&:hover {
-			color: $green;
+			color: $primary-color;
 		}
 	}
 
 	.meta {
 		font-family: $font-paragraph;
 		font-size: 1em;
-		color: $green;
+		color: $primary-color;
 
 		span {
 			color: $color-text-light;
@@ -89,66 +66,94 @@
 	}
 }
 
-/* Social */
-
-.social {
-	font-size: 2em;
-	font-weight: 200;
-	letter-spacing: -2px;
-}
-/* Social */
-.social {
-    .tw { color: #00ACED; }
-    .fb { color: #3B5998; }
-    .ln { color: #007FB1; }
-    .gh { color: #4183C4; }
-    .rss{ color: #FF8300; }
-    .yt { color: #CD332D; }
-}
-
-.tw,
-.fb,
-.ln,
-.gh,
-.yt,
-.rss { 
-    @include opacity(0.75) 
-}
-
-.tw:hover, 
-.fb:hover,
-.ln:hover,
-.gh:hover,
-.yt:hover,
-.rss:hover { 
-    @include opacity(1); 
-}
-
-/* Sharing Buttons Style */
-
-// div.addthis_toolbox {
-// 	width: 100px;
-// 	margin: 0 auto;
-// }
-
-/* Tweets */
-
-.tweets {
-	background-color: $gray-lightest;
-	padding: 1em;
+/* 
+	Service
+-----------------------------------------------------*/
+.service {
+	.fa {
+		width: 80px;
+		height: 80px;
+		line-height: 80px;
+		margin: 1em auto;
+		border: 1px solid $primary-color;
+		@include border-radius(50%);
+		color: $primary-color;
+	}
 }
  
-
-/* Footer */
-
-.footer {
-	position: relative;
-	background-color: $gray-lightest;
- 	text-align: center;
- 	 
- 	p {
- 		font-size: 1em;
- 		margin-bottom: 0;
- 	}
+/* 
+	Contact
+-----------------------------------------------------*/
+.contact {
+	 
+	.btn-default,
+	.btn-default-outline {
+		display: block;
+		margin-bottom: 0.4em;
+		@include MQ(S) {
+			display: inline;
+			margin-bottom: 0;
+		}
+	}
+}
+/* 
+	Lists
+-----------------------------------------------------*/
+.circle {
+	li {
+		text-indent: 2%;
+		color: $primary-color;
+		p {
+			color: $color-text;
+		}
+	}
 }
 
+
+/* 
+	Helpers
+-----------------------------------------------------*/
+.rwd-break {
+	display: block;
+	@include MQ(S) {
+		display: inline;
+	}
+}
+
+.multi-columns {
+	-webkit-columns: 2 200px;
+	   -moz-columns: 2 200px;
+	        columns: 2 200px;
+
+	-webkit-column-gap: 4em;
+	   -moz-column-gap: 4em;
+	        column-gap: 4em;
+
+	-webkit-column-rule: 1px solid darken($white, 10%);
+	   -moz-column-rule: 1px solid darken($white, 10%);
+			column-rule: 1px solid darken($white, 10%);
+}
+
+
+/* 
+	footer styling 
+-----------------------------------------------------*/
+.footer {
+	background-color: #fff;
+	border-top: 1px solid darken($white, 5%);
+	p {
+		margin: 0;
+	}
+
+	li {
+		a {
+			text-decoration: none;
+			border-bottom: 1px solid $color-hr;
+
+			&:hover {
+				border-bottom: 1px solid $color-link-hover;
+			}
+		}
+	}
+
+}

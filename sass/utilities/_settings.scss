@@ -2,61 +2,55 @@
 	Settings
 -----------------------------------------------------*/
 
-/* Width */
+// Width 
 $max-width: 62.5em;
 
-/* Break Points */
+// Break Points 
 $S: 30.063em;
 $M: 48.063em;
 $L: 64.063em;
 
-/* Typography */
-$font-paragraph : "Lato-Light", Helvetica, Arial, sans-serif;
-$font-heading 	: "Lato-Bold", Georgia, serif;
+// Colors 
 
-/* Colors */
-$green 		: #2ecc71;
-$blue 		: #5d9cec;
-$blue-dark 	: #4a89dc;
+$primary-color 	: mediumseagreen; 
+//$color 	: cornflowerblue;
 
-$white 		: #ffffff;
-$black 		: #434a54;
-
-$gray           : #67747c;
-$gray-medium    : #e6e9ed;
-$gray-light     : #bdc3c7;
-$gray-lightest  : #f5f7fa;
-
-/* Selection Color*/
-$color-highlight: $blue;
-
-/* Links */
-$color-link 		: $green;
-$color-link-hover 	: $green;
-
-/* Text color */
-$color-heading 			: $black;
-$color-text 			: $gray;
-$color-text-light 		: $gray-light;
-$color-text-lightest 	: $gray-lightest;
+$white 			: #ffffff;
+$black 			: #333333;
+$black-light 	: #555555;
+$black-lighter  : #999999;
  
-/* Well */
-$well-default: $gray-medium;
+// Base Font-size 
+$base-font-size : 1em;
+$baseline : ($base-font-size * 1.5); 
 
-/* Folded Corner */
-$folded-default: $gray-medium;
+// Typography 
+$font-paragraph : "Roboto", "Helvetica Nue", Arial, sans-serif;
+$font-heading 	: "Roboto", "Helvetica Nue", serif;
 
-/* hr */
-$color-hr: $gray-light;
+// Text color
+$color-heading 			: $black;
+$color-text 			: $black-light;
+$color-text-light 		: $black-lighter;
 
-/* Buttons */
-$btn-default: $green;
+// $global-padding  
+$global-padding: $baseline; 
 
-/* $global-padding */
-$pad: 2em;
+// Selection Color
+$color-highlight: $primary-color;
 
-/* Base Radius */
+// Links  
+$color-link : $primary-color;
+$color-link-hover : darken($color-link, 2%);
+
+// hr  
+$color-hr: darken($white, 10%);
+
+// Buttons 
+$btn-default: $primary-color;
+
+// Base Radius 
 $radius: 3px;
 
-/* Transition */
+// Transition  
 $trans: all 0.35s ease;

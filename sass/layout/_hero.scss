@@ -1,64 +1,63 @@
-/*----------------------------------------------------- 
+/*-----------------------------------------------------
 	Hero
 -----------------------------------------------------*/
 
 .hero {
+	background-color: $primary-color;
+	padding-top: $baseline;
+	padding-bottom: $baseline;
+	border-top: 1px solid darken($white, 5%);
+	border-bottom: 1px solid darken($white, 5%);
+	// background: url(../img/bg.jpg) repeat center center;
+	// -webkit-background-size: cover;
+	// background-size: cover;
+
 	position: relative;
-	padding-top: 3em;
-	padding-bottom: 3em;
-	text-align: center;
-	background-color: $green;
 
-	h1, p {
-		margin: 0;
+	&:after {
+		content: '';
+	    display: block;
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+		background: url(../img/bg.jpg) no-repeat bottom center;
+		-webkit-background-size: cover;
+		background-size: cover;
+		opacity: 0.2;
 	}
 
+	.row {
+		position: relative;
+		z-index: 2;
+	}
+
+	@include MQ(M) {
+		padding-top: $baseline*8;
+		padding-bottom: $baseline*8;
+	}
+	
 	h1 {
-		font-size: 2.2em;
-		line-height: 1.2;
-		margin-bottom: 0.325em;
-		color: $white;
-		@include text-shadow(4px 2px 0 darken($green, 10%));
-		span {
-			color: #5d9cec;
-			font-family: "Lato-Light";
-			font-weight: 200;
-			letter-spacing: -3px;
-		}
+		margin-bottom: 0.2em;
+		letter-spacing: -1px;
 	}
-	p {
-		color: $white;
-		letter-spacing: 1px;
+	h3 {
+	    margin: 0;
+	    font-weight: 400;
+		font-style: italic;
 	}
-}
+	h1,
+	h3 {
+		color: $white;
+		text-align: center;
+	}
 
-@include MQ(S) {
-	.hero {
-		padding: 0;
- 		
- 		.hero-content {
-			text-align: center;
-			height: 450px;
-			-webkit-transform-style: preserve-3d;
-		       -moz-transform-style: preserve-3d;
-		            transform-style: preserve-3d;
-		}
-		
-		.hero-description  {
-			position: relative;
-			top: 50%;
-			-webkit-transform: translateY(-50%);
-			   -moz-transform: translateY(-50%);
-			    -ms-transform: translateY(-50%);
-			     -o-transform: translateY(-50%);
-			        transform: translateY(-50%);
-		  	 
-		}
-		
-		h1 {
-			font-size: 4em;
+	.rwd-break {
+		display: block;
+
+		@include MQ(M) {
+			display: inline;
 		}
 	}
 }
- 
- 

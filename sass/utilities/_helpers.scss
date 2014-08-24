@@ -8,9 +8,9 @@
 .text-justify { text-align: justify;}
 
 .block-center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .align-left   {  @include float-left;    }
@@ -21,15 +21,14 @@
 .radius { @include border-radius($radius); }
 
 .has-padding-tb {
-	padding-top: $pad;
-	padding-bottom: $pad;
+	padding-top: $global-padding*2;
+	padding-bottom: $global-padding*2;
 }
 .has-padding-tb-lg {
-  padding-top: $pad*2;
-  padding-bottom: $pad*2;
+	padding-top: $global-padding*4;
+	padding-bottom: $global-padding*4;
 }
 
-.bg-gray-lightest { background-color: $gray-lightest; }
-.bg-green { background-color: $green; }
-
- 
+.bg-white {
+	background-color: #fff;
+}

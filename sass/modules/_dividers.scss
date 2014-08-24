@@ -1,12 +1,13 @@
-/*----------------------------------------------------- 
-  Divider
+/*-----------------------------------------------------
+	Dividers
 -----------------------------------------------------*/
-
 hr {
 	display: block;
-	height: 2px;
-	margin: 0;
-	margin-bottom: 2em;
+	height: 1px;
+	margin: $baseline 0;
+
 	border: none;
-	background-color: $gray-lightest;
+
+	background-color: $color-hr;
 }
+ 

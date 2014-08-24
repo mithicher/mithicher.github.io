@@ -41,27 +41,39 @@ img {
 }
 
 html {
-	font-size: 100%;
+	font-size: 75%;
+
+	@include MQ(S) {
+		font-size: 90%;
+	}
+
+	@include MQ(M) {
+		font-size: 100%;
+	}
 }
+
 body {
 	color: $color-text;
-	font-size: 1em;
+	font-size: $base-font-size;
 	font-family: $font-paragraph;
+	font-weight: 400;
+	line-height: $baseline;
+	-webkit-hyphens: auto;
+	   -moz-hyphens: auto;
+	    -ms-hyphens: auto;
+			hyphens: auto;
+	word-wrap: break-word;
 }
 
 p {
-	margin-bottom: 1em;
-	line-height: 1.8;
-	font-size: 1em;
+	margin-top: 0;
+	margin-bottom: $baseline;
 	font-family: $font-paragraph;
+	line-height: $baseline;
 
-	@include MQ(M) {
-		font-size: 1.25em;
-	}
-	
 	a {
 		text-decoration: none;
-		border-bottom: 1px solid $gray-lightest;
+		border-bottom: 1px solid $color-hr;
 
 		&:hover {
 			border-bottom: 1px solid $color-link-hover;
@@ -88,60 +100,43 @@ h6 {
 	color: $color-heading;
 	font-family: $font-heading;
 	font-weight: 700;
-	letter-spacing: 1px;
+	line-height: 1.2;
+	margin: 0;
+	margin-bottom: 0.67em;
 }
 
-h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
+h1 { 
+	font-size: 2.618em; 
+	@include MQ(S) {
+		font-size: 4.236em; 
+	}
 }
-
-h2 {
-    font-size: 1.5em;
-    margin: 0.83em 0;
+h2 { 
+	font-size: 1.618em;
+	@include MQ(S) {
+		font-size: 2.618em; 
+	}
 }
-
 h3 {
-    font-size: 1.17em;
-    margin: 1em 0;
+	font-size: 1.618em;
 }
-
 h4 {
-    font-size: 1em;
-    margin: 1.33em 0;
+	font-size: 0.618em;
 }
 
-h5 {
-    font-size: 0.83em;
-    margin: 1.67em 0;
-}
 
-h6 {
-    font-size: 0.67em;
-    margin: 2.33em 0;
+.lead {
+	font-size: 1.618em;
+	line-height: $baseline;
 }
 
 blockquote {
 	margin: 0;
-	@include box-shadow(0 0 2px #ddd);
-	color: $color-text-light;
-	font-size: 1.3rem;
-	white-space: spacewrap;
-
-	&:before {
-		content: "\201C";
-		display: inline-block;
-		padding-right: .4em;
-		font-family: $font-heading;
-	}
+	font-style: italic;
 
 	cite {
-		display: block;
-		font-size: 0.85rem;
+		font-size: .75rem;
 		font-style: normal;
-		color: $color-text-lightest;
-		margin-top: 0.825em;
-		letter-spacing: 1px;
 
 		&:before {
 			content: "- ";
@@ -149,22 +144,3 @@ blockquote {
 	}
 }
 
-.lead {
-	font-size: 1.3rem;
-}
-
-.dropcap:first-letter {
-    letter-spacing: 0;
-    text-transform: uppercase;
-    font-family: inherit;
-    font-size: 3.5rem;
-    @include float-left;
-    margin: 0.13em 0.1em 0 0;
-    line-height: 0.7;
-    color: $color-text;
-}
-
-.intro:first-line {
-	text-transform: uppercase;
-	letter-spacing: 2px;
-}
