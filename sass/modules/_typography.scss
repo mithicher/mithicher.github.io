@@ -41,15 +41,7 @@ img {
 }
 
 html {
-	font-size: 75%;
-
-	@include MQ(S) {
-		font-size: 90%;
-	}
-
-	@include MQ(M) {
-		font-size: 100%;
-	}
+	font-size: 100%;
 }
 
 body {

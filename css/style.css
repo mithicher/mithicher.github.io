@@ -1963,13 +1963,7 @@ img {
   text-shadow: none; }
 
 html {
-  font-size: 75%; }
-  @media only screen and (min-width: 30.063em) {
-    html {
-      font-size: 90%; } }
-  @media only screen and (min-width: 48.063em) {
-    html {
-      font-size: 100%; } }
+  font-size: 100%; }
 
 body {
   color: #555555;
