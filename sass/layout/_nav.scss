@@ -9,6 +9,7 @@
 		margin-top: 0;
 	}
 	.menu {
+		text-align: center;
 		margin: 0;
 		padding: 0;
 		list-style: none;
@@ -21,7 +22,7 @@
 		.menu-item {
 			display: inline-block;
 			text-align: center;
-			margin-right: 2em;
+			margin-right: 1.2em;
 
 			&::last-child {
 				margin-right: 0em;
@@ -29,7 +30,7 @@
 
 			@include MQ(S) {
 				display: inline-block;
-				margin-left: 1em;
+				margin-left: 1.4em;
 				margin-right: 0;
 			}
 

@@ -50,10 +50,6 @@
   padding-top: 3em;
   padding-bottom: 3em; }
 
-.has-padding-tb-lg {
-  padding-top: 6em;
-  padding-bottom: 6em; }
-
 .bg-white {
   background-color: #fff; }
 
@@ -2107,6 +2103,7 @@ ol li {
     .nav {
       margin-top: 0; } }
   .nav .menu {
+    text-align: center;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -2117,13 +2114,13 @@ ol li {
     .nav .menu .menu-item {
       display: inline-block;
       text-align: center;
-      margin-right: 2em; }
+      margin-right: 1.2em; }
       .nav .menu .menu-item::last-child {
         margin-right: 0em; }
       @media only screen and (min-width: 30.063em) {
         .nav .menu .menu-item {
           display: inline-block;
-          margin-left: 1em;
+          margin-left: 1.4em;
           margin-right: 0; } }
       .nav .menu .menu-item a {
         display: block;
@@ -2197,7 +2194,7 @@ ol li {
 	Theme
 -----------------------------------------------------*/
 body {
-  background-color: rgba(222, 222, 222, 0.2); }
+  background-color: rgba(222, 222, 222, 0.3); }
 
 /* 
 	Site Header
@@ -2210,8 +2207,8 @@ body {
   .site-header .logo-link {
     float: none;
     display: block;
-    text-align: left;
-    font-size: 2.618em;
+    text-align: center;
+    font-size: 1.618em;
     font-family: "Roboto", "Helvetica Nue", serif;
     font-weight: 700;
     letter-spacing: -1px;
@@ -2221,8 +2218,7 @@ body {
       color: mediumseagreen; }
     @media only screen and (min-width: 30.063em) {
       .site-header .logo-link {
-        float: left;
-        font-size: 1.618em; } }
+        float: left; } }
 
 /* 
 	article styling 
