@@ -1,0 +1,184 @@
+/**
+ *  _card.scss
+ */
+.card {
+	// position: relative;
+	@include material-shadow($level:1);
+}
+	
+.card__image {
+	position: relative;
+	margin-bottom: 0;
+	// overflow: hidden;
+	> a,
+	> img {
+		display: block;
+		margin: 0;
+		padding: 0;
+		//@include border-radius($global__radius $global__radius 0 0);
+	}
+
+	> img {
+		width: 100%;
+	}
+}
+
+.card__image-left {
+	float: none;
+	display: block;
+	margin: 0;
+
+
+	@include MQ($breakpoint__large) {
+		float: left;
+		margin-right: rem(24px);
+	}
+
+	> img {
+		margin-bottom: 0;
+		width: 100%;
+		height: 150px;
+
+		@include MQ($breakpoint__medium) {
+			width: 300px;
+			height:242px;
+		}
+	}
+}
+ 
+
+.card__overlay {
+	position: relative;
+	margin: 0;
+
+	&:after {
+		content: "";
+		position: absolute;
+		display: block;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(black, 0.35);
+ 		
+ 		@include border-radius($global__radius $global__radius 0 0);
+	}
+}
+
+.card__overlay-content {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	padding: rem(24px) rem(24px) rem(12px);
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+	font-weight: 400;
+	z-index: 1;
+}
+	.card__overlay-content__title {
+		color: $color__white !important;
+	}
+
+	.card__overlay-content__meta,
+	.card__overlay-content__meta-link {
+		color: rgba(white, 0.8) !important;
+	} 
+ 
+// card main contents
+.card__content {
+	padding:  rem(12px) rem(24px);
+	//border-top: 1px solid darken(white, 6%);
+
+	h5:last-child, 
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+// card footer / action buttons
+.card__action {
+	position: relative;
+	overflow: hidden;
+	padding: rem(12px) rem(24px);
+	
+	// a {
+	// 	font-family: $head__font-family;
+	// 	font-weight: bold;
+	// }
+
+	&.card__action--border {
+		border-top: 1px solid darken(white, 6%);
+	}
+
+	.icon-circle {
+		position: absolute;
+		content: "";
+		top: 4px;
+		right: rem(24px);
+		color: #fff;
+	}
+}
+
+// card colors
+.card--white {
+	background-color: $color__white;
+}
+
+// card meta 
+.card__meta time {
+	display: inline-block;
+	font-size: rem(14px);
+	font-weight: 400;
+	color: #bbb;
+	margin-left: 0.8rem;
+}
+
+.card__article-title__link {
+	text-decoration: none;
+	color: #444;
+	@include transition(color 0.5s ease);
+
+	&:hover {
+		color: $color__green;
+	}
+}
+
+// card article author
+.card__meta,
+.avatar,
+.card__author-content {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.card__author-content,
+.card__meta {
+	a {
+		color: $link__color;
+
+		&:hover,
+		&:focus {
+			color: $link__color--hover;
+		}
+	}
+}
+
+// Avatar / Profile pics
+.avatar {
+	display: inline-block;
+	vertical-align: middle;
+	width: 48px;
+	height: 48px;
+	@include border-radius(50%);
+	margin: 0;
+	padding: 0;
+	margin-right: 0.6em;
+}
+
+.card__author-content {
+	font-size: 1.6rem;
+}
+ 
