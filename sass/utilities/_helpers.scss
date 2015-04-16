@@ -1,0 +1,30 @@
+/*----------------------------------------------------- 
+  Helpers
+-----------------------------------------------------*/
+
+.text-left    { text-align: left;   }
+.text-right   { text-align: right;  }
+.text-center  { text-align: center; }
+.text-justify { text-align: justify;}
+
+.block-center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.align-left   {  @include float-left;    }
+.align-right  {  @include float-right;   }
+
+.clearfix { @include clearfix;  }
+
+.radius { @include border-radius($radius); }
+
+.has-padding-tb {
+	padding-top: $global-padding*2;
+	padding-bottom: $global-padding*2;
+}
+ 
+.bg-white {
+	background-color: #fff;
+}
