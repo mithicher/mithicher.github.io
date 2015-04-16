@@ -1,0 +1,21 @@
+/**
+ *  _image.scss
+ */
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+.img__rounded {
+	@include border-radius(100%);
+}
+
+.img__radius {
+	@include border-radius($global__radius);
+}
+
+.img__border {
+	border: 8px solid $color__white;
+	box-sizing: border-box;
+}

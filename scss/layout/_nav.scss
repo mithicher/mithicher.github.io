@@ -1,0 +1,299 @@
+/**
+ *  _nav.scss
+ */
+
+.site__container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.site__pusher {
+  -webkit-transition: all 300ms ease-in-out;
+     -moz-transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out;
+}
+ 
+
+/* For Fixed Navigation */
+.navbar--fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 98; 
+  background-color: $nav-bg;
+  
+  @include material-shadow($level:1);
+  @include transition(all 0.4s ease);
+}
+
+/* For Absolute navigation */
+.navbar--absolute {
+  content: "";
+  position: absolute;
+  z-index: 99;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: transparent;
+}
+ 
+/* Navbar Logo */
+.navbar__logo {
+  font-size: 1.2rem;
+  font-family: $head__font-family;
+  font-weight: 700;
+  // line-height: 1.2;
+  color: $logo__color !important;
+  margin-right: 0;
+  display: inline-block;
+  cursor: pointer;
+  line-height: 56px;
+
+  &:hover {
+    color: $logo__color--hover !important;
+  }
+ 
+  @media screen and (min-width: 64.063em) {
+    position: relative;
+    float: left;
+    margin-right: 1em;
+    line-height: 64px;
+  }
+}
+
+
+/* Navbar Styling */
+.navbar {
+  @include pie-clearfix;
+  width: 100%;
+  display: block;
+  // background-color: transparent;
+  height: 56px;
+  line-height: 56px;
+  color: #fff;
+  @include transition(all 0.6s ease);
+
+  @media screen and (min-width: 64.063em) {
+    height: 64px;
+    line-height: 64px;
+  }
+ 
+  ul {
+    margin: 0;
+    padding: 0;
+
+    @media screen and (min-width: 64.063em) { 
+      margin-right: -16px;
+    }
+
+    li {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: block;
+      text-indent: 0;
+
+      @media screen and (min-width: 64.063em) { 
+        display: inline-block;
+        padding-right: 16px;
+
+        &.active a {
+          color: $nav-link-active-color;
+          //@include box-shadow(0 -3px 0 $nav-link-hover-color inset);
+        }
+      }
+    }
+  }
+
+}
+
+/* Navbar Width */
+.navbar__container {
+  //position: relative;
+  width: 100%;
+  padding-left: 1em;
+  padding-right: 1em;
+  overflow: hidden;
+  
+  @media screen and (min-width: 64.063em) {
+    max-width: $navbar-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* reveal menu for mobile when clicked */
+.navbar--active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+ 
+  -webkit-transition: all 300ms ease-in-out;
+     -moz-transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out;
+  
+  -webkit-transform: translateX(260px);
+     -moz-transform: translateX(260px);
+      -ms-transform: translateX(260px);
+          transform: translateX(260px);
+}
+ 
+
+/* Menu Stylings */
+.menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  
+  width: 260px;
+  height: 100%;
+  overflow-y: scroll;
+
+   -webkit-transform: translateX(-260px);
+      -moz-transform: translateX(-260px);
+       -ms-transform: translateX(-260px);
+           transform: translateX(-260px);
+
+  -webkit-transition-property: all;
+     -moz-transition-property: all;
+          transition-property: all;
+
+  -webkit-transition-duration: 300ms;
+     -moz-transition-duration: 300ms;
+          transition-duration: 300ms;
+  
+  background-color: $nav-collapse-bg;
+  // @include transform(translateZ(0));
+  // @include transform(translateX(-260px));
+  // @include transform(translate3d(-260px, 0, 0));
+  // @include transition(transform 0.4s ease-out);
+   
+  @media screen and (min-width: 64.063em) {
+    position: relative;
+    display: inline;
+    width: auto;
+    background-color: transparent;
+    overflow: auto;
+
+    .menu-pull-right {
+      margin-top: -1px; 
+      float: right;
+    }
+    .menu-pull-left {
+      margin-top: -1px; 
+      float: left;
+    }
+  }
+
+  
+  a {
+    position: relative;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    font-family: $nav-link-font-family;
+    font-size: $nav-link-font-size;
+    outline: none;
+    text-indent: 1.8rem;
+    border-bottom: 1px solid $nav-collapse-border-color;
+    color: #fff;
+    
+    -webkit-transition: opacity 300ms ease-in-out;
+            transition: opacity 300ms ease-in-out;
+
+    opacity: 1;
+    -webkit-transition-delay: 500ms;
+            transition-delay: 500ms;
+
+    @media screen and (min-width: 64.063em) {
+      display: inline-block;
+      //float: left;
+      padding: 0;
+      box-sizing: border-box;
+      text-indent: 0;
+      border-bottom: 0;
+      
+      &:after {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        color: white;
+        content: '';
+        width: 0px;
+        height: 2px;
+        background-color: #fff;
+
+        -webkit-transition: width 0.4s ease;
+           -moz-transition: width 0.4s ease;
+            -ms-transition: width 0.4s ease;
+             -o-transition: width 0.4s ease;
+                transition: width 0.4s ease;
+
+        -webkit-transform: translateX(-50%);
+           -moz-transform: translateX(-50%);
+                transform: translateX(-50%);
+        pointer-events: none;
+      }
+
+      &:hover,
+      &:focus {
+        color: $nav-link-hover-color;
+        //@include box-shadow(0 -3px 0 $nav-link-hover-color inset);
+        &:after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/* Add an overlay to the content when offcanvas navigation menu is revealed */
+.navbar--active .site__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  z-index: 101;
+}
+
+/* Navbar Toggle Icon/ hamburger icon */
+.navbar__toggle-icon {
+  position: relative;
+  display: block;
+  float: left;
+  width: 46px;
+  height: 56px;
+  cursor: pointer;
+  outline: none;
+  margin-right: 1%;
+
+  @media screen and (min-width: 64.063em) {
+    display: none;
+  }
+}
+
+.navbar__toggle-icon:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 1.6rem;
+  height: 0;
+  top: 12px;
+  left: 0;
+  @include box-shadow(
+        0 10px 0 1px $nav-toggle-icon-color, 
+        0 16px 0 1px $nav-toggle-icon-color, 
+        0 22px 0 1px $nav-toggle-icon-color);
+}
+
+/* OffCanvas Navigation Styles Ends */
