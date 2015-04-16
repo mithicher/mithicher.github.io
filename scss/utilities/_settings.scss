@@ -1,0 +1,108 @@
+/**
+ *  _settings.scss
+ */
+
+// colors
+$red: #FF8A00;
+
+$dark-green: #157a6e;
+$green: #00C176;
+$light-green: #88c100;
+
+$blue: #5D9CEC;
+$orange: #FABE28;
+
+$black: #2e3233;
+$white: #fff;
+
+$gray: #eee;
+$gray-light: #CCD1D9;
+
+$primary-text-color: #727272;
+$secondary-text-color: #212121;
+
+$color__red: $red;
+$color__orange: $orange;
+$color__green: $green;
+$color__green--light: $light-green;
+$color__green--dark: $dark-green;
+$color__blue: $blue;
+$color__black: $black;
+$color__white: $white;
+$color__gray: $gray; 
+$color__gray--dark: #bdbdbd;
+$color__gray--light: $gray-light;
+
+// Breakpoints
+$breakpoint__small: 40.063em;
+$breakpoint__medium: 48.063em;
+$breakpoint__large: 64.063em;
+
+// Base Font size and line-height
+$fontbase: 16px;
+//$rembase: 10px;
+$rembase: 16px; 
+$line-height-base: 24;
+
+
+$body__font-size: 1em;  
+$baseline: 1.5;  /* $line-height-base ÷ $fontbase */
+
+// Font Weights
+$font-weight--light: 300;
+$font-weight--normal: 400;
+$font-weight--semi-bold: 600;
+$font-weight--bold: 700;
+
+// Font Family
+$body__font-family: 'Istok Web', sans-serif;
+$head__font-family: 'Roboto', 'Open Sans', 'Cambria', serif;
+
+// Font colors
+$body__text-color: $primary-text-color;
+$head__text-color: $secondary-text-color;
+
+// Links
+$link__color: $color__green;
+$link__color--hover: darken($link__color, 16%);
+
+// Border Color
+$border__color: #B6B6B6;
+
+// Radius
+$global__radius: 2px;
+$global__rounded: 1000px;
+
+// Transition
+$global__trans: all 250ms ease;
+
+// Buttons
+$btn__success: $color__green;
+$btn__alert: $color__red;
+$btn__info: $color__blue;
+$btn__white: $color__white;
+
+
+// Logo
+$logo__color: #fff;
+$logo__color--hover: lighten($logo__color, 5%);
+
+// Navigation
+$navbar-width: 62.5em;
+
+$nav-bg: $color__green;
+ 
+$nav-collapse-bg: #333;
+$nav-collapse-border-color: lighten($nav-collapse-bg, 10%);
+
+$nav-link-color: #eee;
+$nav-link-active-color: $color__green--dark;
+$nav-link-hover-color: #fff;
+
+$nav-link-font-family: $body__font-family;
+$nav-link-font-size: 1rem;
+
+$nav-toggle-icon-color: #fff;
+
+// Hero Background
+$hero__bg: $nav-bg;

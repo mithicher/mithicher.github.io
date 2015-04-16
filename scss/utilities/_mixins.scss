@@ -1,0 +1,76 @@
+/**
+ * 	_mixins.scss
+ */
+
+// Rem output with px fallback
+// usage example: @include fontsize(16px);
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: ($size / 16px) * 1rem;
+}
+
+// Opacity 
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+// Hide text
+@mixin hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+// Clearfix
+@mixin clearfix {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+// Breakpoints
+@mixin MQ($canvas) {
+  @if $canvas == breakpoint__small {
+   @media only screen and (min-width: $breakpoint__small) { @content; } 
+  }
+  @else if $canvas == breakpoint__medium {
+   @media only screen and (min-width: $breakpoint__medium) { @content; } 
+  }
+  @else if $canvas == breakpoint__large {
+   @media only screen and (min-width: $breakpoint__large) { @content; } 
+  }
+}
+
+//https://gist.github.com/destan/b9ccfa6243eab53460d2
+/* Original is in LESS and can be found here: https://gist.github.com/gefangenimnetz/3ef3e18364edf105c5af */
+@mixin material-shadow($level:1) {
+ 
+  @if $level == 0 {
+    box-shadow: 0 1px 3px rgba(0,0,0, 0.12);
+  }
+  @else if $level == 1 {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  @else if $level == 2 {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+  @else if $level == 3 {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  @else if $level == 4 {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  @else if $level == 5 {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  }
+  
+} 

@@ -1,92 +1,203 @@
----
-layout: default
-title: Home
----
-
-	<div class="hero">
-		<div class="row">
-			<div class="columns large-12">
-				<div id="hero-content" class="hero-content">
-                    <div class="hero-description">
-					   <h1 class="animated fadeInLeftBig">Hi, my name is <span class="rwd-break">Mithicher Baro</span></h1>
-					   <h3 class="animated slideInDown">A self-learned Web Designer &amp; Web Developer from India</h3>
-                    </div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="has-padding-tb">
-		<div class="row wow fadeInDown">
-			<div class="columns large-12">
-				<h2 class="head-title text-center">About Me</h2>
-			</div>
-		</div>
-
-		<div class="row wow fadeInLeft">
-			<div class="columns large-8 large-offset-2 medium-8 medium-offset-2">
-			 	<p>Hi, I'm <a href="https://twitter.com/mithicher">Mithicher Baro</a>, a self-learned front-end web developer from Guwahati, India. I am an IT graduate and I love web development.</p>
-				<p>I create website that are clean, functional and responsive too. I like minimalist, typography and flat web design trends.</p>
-				<p>If you would like to connect with me, then find me on 
-					<a href="https://twitter.com/mithicher">Twitter</a> and 
-					<a href="https://github.com/mithicher/">Github</a>.
-				</p>
-				<p>You can also drop me a mail at <a href="mailto:mithnehu@gmail.com">mithnehu@gmail.com</a></p>
-             
-                <p>Some of my web development skills...</p>
-                <ul class="circle">
-                    <li><p>HTML5, CSS3, Responsive Web Design</p></li>
-                    <li><p>Css preprocessors like Sass &amp; Compass</p></li>
-                    <li><p>Javascripts &amp; jQuery</p></li>
-                    <li><p>Css frameworks Bootstrap 3, Foundation 5</p></li>
-                    <li><p>PHP &amp; MySQL</p></li>
-                </ul>
-            </div>    
-		</div>
-	</div>
-
-	<div class="service has-padding-tb bg-white">
-		 
-		<div class="row wow fadeInDown">
-			<div class="columns large-12">
-				<h2 class="head-title text-center">What I Can Do</h2>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="columns large-10 large-offset-1">
-				<div class="multi-columns">
-					 
-						<div class="text-center wow fadeInLeft">
-							<i class="fa fa-desktop fa-2x"></i>
-						 	<h3>Web Design</h3>
-						 	<p>I can develop good looking websites with HTML5 &amp; CSS3
-						 		and make them responsive too.</p>
-						</div>
-		            
-		            	<div class="text-center wow fadeInRight">
-		            		<i class="fa fa-gears fa-2x"></i>
-						 	<h3>Web Development</h3>
-						 	<p>I can develop custom dynamic applications with PHP &amp; MySQL.</p>
-						</div>
-		            
-		        </div>
-	        </div>    
-		</div>
-		 
-	</div>
-
-	<div class="contact has-padding-tb text-center"> 
-		<div class="row wow fadeInDown">
-			 
-	        <div class="columns large-12">
-	             
-	            <h2>Get In Touch</h2> 
-	            <p>Let's talk.</span></p>
-	            <p><a class="btn-default-outline btn-large" href="mailto:mithnehu@gmail.com">Email Me</a>&nbsp;<a class="btn-default btn-large" href="https://twitter.com/mithicher">Tweet me</a></p>
-	              
-	        </div>
-	         
-		</div>
-	</div>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mithicher Baro</title>
+        <meta name="description" content="A self-learned web developer's portfolio website, from Guwahati">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,100' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        
+    <div class="site__container">
+        <div class="site__pusher">
+
+            <header id="navbar" class="navbar navbar--absolute">
+                <div class="navbar__container">
+                    
+                    <a href="#" class="navbar__toggle-icon" id="navbar__toggle-icon"></a>
+                    <a href="index.html" class="navbar__logo">mithicher.</a>
+                    
+                    <nav class="menu">
+                        <ul class="menu-pull-right">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#about">About Me</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                
+                </div>
+            </header><!-- /header -->
+         
+            <section class="main-content">
+
+                <section class="hero">
+                     
+                    <div class="hero__content text-center">
+                        <h1 class="wow fadeInDown" data-wow-delay="0.4s">Hi, my name is <strong>Mithicher Baro</strong></h1>
+                        <h2 class="wow fadeInDown" data-wow-delay="0.6s">A self-learned freelance Web Developer from Guwahati</h2>
+                    </div>
+               
+                </section><!-- /hero -->
+
+                <section id="about" class="about padding-tb-l">
+                    <div class="row">
+                        <div class="small-twelve medium-twelve large-ten large-offset-by-one columns">
+                            
+                            <div class="row">
+                                <div class="large-twelve columns">
+                                    <h2 class="text-center wow fadeInDown">About Me</h2>
+                                    <p class="lead wow fadeInDown" data-wow-delay="0.4s">
+                                        Hi, I'm Mithicher Baro, a self-learned web designer/developer from Guwahati, India. I create website that are clean, functional and responsive too. I like minimalist, typography, flat web design and material design trends. Some of my skills that I learned are...
+                                    </p>
+                                   
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="medium-six large-six columns">
+                                     
+                                    <ul class="no-bullets wow fadeInDown" data-wow-delay="0.6s">
+                                        <li>HTML5 &amp; CSS3</li>
+                                        <li>Responsive Web Design</li>
+                                        <li>Javacripts &amp; JQuery</li>
+                                     
+                                    </ul>
+                                </div>
+                                <div class="medium-six large-six columns">
+                                     
+                                    <ul class="no-bullets wow fadeInDown" data-wow-delay="0.8s">
+                                        <li>Sass &amp; Compass</li>
+                                        <li>CSS Frameworks &mdash; Bootstrap and Foundation 5</li>
+                                        <li>PHP &amp; MySQL, Wordpress</li>
+                                    </ul>
+                                     
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section><!-- /about -->
+                
+                <section id="services" class="services bg__white padding-tb-l">
+                    <div class="row">
+                        <div class="small-twelve medium-twelve large-twelve columns">
+                            <h2 class="text-center wow fadeInDown">What I Can Do</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="medium-four large-four columns">
+                            <div class="service__content wow fadeInDown" data-wow-delay="0.4s">
+                                <div class="icon-circle icon-large inline__block--center icon--red">
+                                    <span class="fa fa-desktop"></span>
+                                </div>   
+                                <h4 class="text-center">Front-End Development</h4>
+                                <p class="text-center">I build websites that are fully HTML5 and CSS3 compliant and beautiful to look at as well as responsive.</p>
+                            </div>
+                        </div>
+                        <div class="medium-four large-four columns">
+                            <div class="service__content wow fadeInDown" data-wow-delay="0.6s">
+                                <div class="icon-circle icon-large inline__block--center icon--green">
+                                    <span class="fa fa-gears"></span>
+                                </div>
+                                <h4 class="text-center">Web Development</h4>
+                                <p class="text-center">I can develop custom application with PHP &amp; MySQL from scratch. I have also some good knowledge of OOPHP.</p>
+                            </div> 
+                        </div>
+                        <div class="medium-four large-four columns">
+                             <div class="service__content wow fadeInDown" data-wow-delay="0.8s">
+                                <div class="icon-circle icon-large inline__block--center icon--blue">
+                                    <span class="fa fa-wordpress"></span>
+                                </div>
+                                <h4 class="text-center">Wordpress</h4>
+                                <p class="text-center">I have a good knowledge of wordpress. I can also develop custom themes for wordpress as well.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section><!-- /services -->
+
+                <section id="contact" class="contact padding-tb-l">
+                    <div class="row">
+                        <div class="small-twelve medium-twelve large-twelve columns">
+                            <h2 class="text-center wow fadeInDown">Connect With Me</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="small-twelve medium-four large-four columns">
+                            <div class="service__content wow fadeInDown" data-wow-delay="0.4s">
+                                <a href="http://codepen.io/mithicher" class="icon-circle icon-large inline__block--center icon__codepen ripple icon--black">
+                                    <span class="fa fa-codepen"></span>
+                                </a>   
+                                <h4 class="text-center">Codepen</h4>
+                                <p class="text-center">Feel free to checkout <br> my pens created at <a href="http://codepen.io/mithicher">codepen</a></p>
+                            </div>
+                        </div>
+                        <div class="small-twelve medium-four large-four columns">
+                            <div class="service__content wow fadeInDown" data-wow-delay="0.6s">
+                                <a href="https://twitter.com/mithicher" class="icon-circle icon-large inline__block--center icon__twitter ripple">
+                                    <span class="fa fa-twitter"></span>
+                                </a>
+                                <h4 class="text-center">Twitter</h4>
+                                <p class="text-center">Let's talk &amp; be friends <br>Tweet Me <a href="https://twitter.com/mithicher">@mithicher</a></p>
+                            </div> 
+                        </div>
+                        <div class="small-twelve medium-four large-four columns">
+                             <div class="service__content wow fadeInDown" data-wow-delay="0.8s">
+                                <a href="mailto:mithnehu@gmail.com" class="icon-circle icon-large inline__block--center icon__email ripple">
+                                    <span class="fa fa-envelope"></span>
+                                </a>
+                                <h4 class="text-center">Email</h4>
+                                <p class="text-center">Have a new project! Drop me a mail at <br><a href="mailto:mithnehu@gmail.com">mithnehu@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </section><!-- /contact -->
+              
+                <footer class="footer padding-tb bg__white">
+                    <div class="row">
+                        <div class="small-twelve medium-twelve large-twelve columns">
+                            <p class="text-center">Thanks for visiting this website | Created by <a href="http://mithicher.github.io">mithicher</a> | Tweet me <a href="https://twitter.com/mithicher">@mithicher</a></p>
+                        </div>
+                    </div>
+                </footer><!-- /footer -->
+
+                <div class="site__overlay" id="site__overlay"></div>
+            
+            </section><!-- /main-content -->
+
+        </div> <!-- /site__pusher -->
+    </div> <!-- /site__container -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/vendor/wow.min.js"></script>
+        <script src="js/nav.js"></script>
+        <script src="js/ripple.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-50695962-1', 'mithicher.github.io');
+          ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>

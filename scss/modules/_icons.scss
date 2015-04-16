@@ -1,0 +1,85 @@
+/**
+ *  _icons.scss
+ */
+[class*="icon-"] {
+	//border: 2px solid $border__color;
+	border: 0;
+	width: 3em;
+	height: 3em;
+	// padding: 0.25em;
+	margin-bottom: 24px;
+	margin-bottom: 2.4rem;
+	background-color: transparent;
+
+	text-align: center;
+	@include material-shadow($level:1);
+
+	span, i {
+		line-height: 3em;
+		//line-height: 1.3em;
+		vertical-align: middle;
+	}
+
+	@include transition(all 0.3s ease);
+	
+	&:hover,
+	&:focus {
+		@include material-shadow($level:2);
+		//@include transform(scale(1.1));
+	}
+}
+
+.icon-circle {
+	@include border-radius(50%);
+	
+	&:hover,
+	&:focus {
+		@include border-radius(50%);
+	}
+}
+
+.icon-rounded {
+	border-radius: $global__radius;
+}
+
+.icon-semi-rounded {
+	border-radius: $global__radius*10;
+}
+ 
+.icon-large {
+	font-size: 150%;
+}
+
+.icon-medium {
+	font-size: 130%;
+}
+
+.icon-huge {
+	font-size: 250%;
+}
+
+// icon colors
+.icon--blue,
+.icon--red,
+.icon--green,
+.icon--black {
+	color: #fff !important;
+}
+
+.icon--blue { background-color: $color__blue; }
+.icon--green { background-color: $color__green; }
+.icon--red { background-color: $color__red; }
+.icon--black { background-color: $secondary-text-color; }
+
+
+.icon--blue-outline, 
+.icon--green-outline,  
+.icon--red-outline,
+.icon--black-outline {  
+	box-shadow: none;
+}
+
+.icon--blue-outline { border-color: $color__blue; color: $color__blue; }
+.icon--green-outline { border-color: $color__green; color: $color__green; }
+.icon--red-outline { border-color: $color__red; color: $color__red; }
+.icon--black-outline { border-color: $secondary-text-color; color: $secondary-text-color; }
