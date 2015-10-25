@@ -1,0 +1,69 @@
+// contact
+.contact {
+	overflow: hidden;
+}
+
+.contact__list {
+	margin: 0;
+	padding: 0;
+	li {
+		float: left;
+		list-style-type: none;
+		margin-bottom: 0;
+		@include span(6 of $social_grid);
+
+		@media screen and (min-width: 40.063em) {
+			@include span(3 of $social_grid);	
+		}
+
+		&:not(:last-child) a {
+			border-right: 1px solid #eee;
+		}
+	}
+
+	a {
+		border-bottom: 1px solid #eee;
+		color: $body-font-color;
+		display: block;
+		letter-spacing: 0.04em;
+		padding: 1em;
+		text-transform: uppercase;
+		vertical-align: middle;
+
+		@media screen and (min-width: 40.063em) {
+			font-size: 1.2rem;
+			padding: 1.5em 1em;
+		}
+
+		&:hover {
+			text-decoration: none;
+		}
+
+		&.twitter {
+			color: #55acee;
+		}
+
+		&.email {
+			color: #d3492c;
+		}
+
+		&.linkedin {
+			color: #0077b5;
+		}
+
+		&.codepen {
+			color: #000;
+		}
+	}
+
+	.fa {
+		display: block;
+		margin-bottom: 0.75rem;
+
+		@media screen and (min-width: 40.063em) {
+			display: inline-block;
+			margin-bottom: 0;
+		}
+	}
+}
+ 

@@ -1,44 +1,25 @@
-/**
- * 	style.scss
- *
- *	Simple CSS framework
- * 	Author: Mithicher Baro @mithicher
- *
- * 	This framework is inspired by Jonathan Path's framework.
- *  https://github.com/jonathanpath/SASS-SMACSS
- *  
- */
-
-/* Compass */
-@import "compass";
-
-/* Utilities */
-@import "utilities/settings";
-@import "utilities/mixins";
-@import "utilities/functions";
-@import "utilities/helpers";
-
-/* Base */
+@import "base/variables";
 @import "base/normalize";
-@import "base/base";
+@import "base/helpers";
+@import "base/typography";
 
-/* Layout */
-@import "layout/nav";
-//@import "layout/hero";
-//@import "layout/header";
-//@import "layout/main";
-//@import "layout/footer";
-
-/* Modules */
+@import "modules/grids";
+@import "modules/svg";
+@import "modules/buttons";
+@import "modules/lists";
 @import "modules/blockquotes";
-@import "modules/button";
-@import "modules/card";
-@import "modules/grid";
-@import "modules/hr";
-@import "modules/icons";
-@import "modules/image";
-@import "modules/ripple";
-@import "modules/typography";
 
-/* Theme */
+@import "layouts/header";
+@import "layouts/hero";
+@import "layouts/about";
+@import "layouts/services";
+@import "layouts/work";
+@import "layouts/contact";
+@import "layouts/footer";
+
 @import "theme/theme";
+
+
+
+
+
